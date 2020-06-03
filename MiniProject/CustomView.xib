@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomView" customModule="MiniProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYJ-8o-Mxr">
+                    <rect key="frame" x="0.0" y="94" width="414" height="248"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3K5-Gz-F6D">
+                            <rect key="frame" x="10" y="0.0" width="394" height="248"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3K5-Gz-F6D" firstAttribute="top" secondItem="ZYJ-8o-Mxr" secondAttribute="top" id="IHZ-dK-nfp"/>
+                        <constraint firstAttribute="bottom" secondItem="3K5-Gz-F6D" secondAttribute="bottom" id="Qwu-PA-0jp"/>
+                        <constraint firstAttribute="trailing" secondItem="3K5-Gz-F6D" secondAttribute="trailing" constant="10" id="dXr-hH-m2k"/>
+                        <constraint firstItem="3K5-Gz-F6D" firstAttribute="leading" secondItem="ZYJ-8o-Mxr" secondAttribute="leading" constant="10" id="duu-33-zlW"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4A-Iz-cOP">
+                    <rect key="frame" x="10" y="392" width="394" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZYJ-8o-Mxr" secondAttribute="bottom" constant="520" id="BKC-uB-lWK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I4A-Iz-cOP" secondAttribute="trailing" constant="10" id="HxX-MN-0JJ"/>
+                <constraint firstItem="I4A-Iz-cOP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="JLn-3u-P4X"/>
+                <constraint firstItem="ZYJ-8o-Mxr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eju-4g-iuO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZYJ-8o-Mxr" secondAttribute="trailing" id="nHx-KF-Kie"/>
+                <constraint firstItem="ZYJ-8o-Mxr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="pWK-Vp-flJ"/>
+                <constraint firstItem="I4A-Iz-cOP" firstAttribute="top" secondItem="ZYJ-8o-Mxr" secondAttribute="bottom" constant="50" id="ugi-lf-cuB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="photoImage" destination="3K5-Gz-F6D" id="9YA-OP-7Ja"/>
+                <outlet property="textLabel" destination="I4A-Iz-cOP" id="aXS-iG-hid"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="131"/>
+        </view>
+    </objects>
+</document>

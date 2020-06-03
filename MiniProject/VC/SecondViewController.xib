@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="MiniProject" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="cNh-V9-LbE" id="T1O-Qj-aDB"/>
+                <outlet property="scrollView" destination="eZg-pV-7jY" id="Wt6-nF-qPp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="hrE-t4-SWA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZg-pV-7jY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="cNh-V9-LbE">
+                    <rect key="frame" x="187.5" y="775" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eZg-pV-7jY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5gG-PB-b0Q"/>
+                <constraint firstAttribute="bottom" secondItem="hrE-t4-SWA" secondAttribute="bottom" id="6dj-UZ-Dm8"/>
+                <constraint firstItem="cNh-V9-LbE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6st-JW-LXb"/>
+                <constraint firstItem="eZg-pV-7jY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dho-Ua-9o4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eZg-pV-7jY" secondAttribute="bottom" id="KBC-0w-8py"/>
+                <constraint firstItem="hrE-t4-SWA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LgM-Cg-IOh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cNh-V9-LbE" secondAttribute="bottom" constant="50" id="YRQ-26-HLN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eZg-pV-7jY" secondAttribute="trailing" id="c0p-yR-fFU"/>
+                <constraint firstItem="hrE-t4-SWA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kbV-Kc-6R5"/>
+                <constraint firstItem="hrE-t4-SWA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yue-Cd-sjb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sea" width="640" height="960"/>
+    </resources>
+</document>

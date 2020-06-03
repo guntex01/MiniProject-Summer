@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirstViewController" customModule="MiniProject" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="kBx-Yr-QK5" id="Q9S-7E-Xaz"/>
+                <outlet property="scrollView" destination="DMG-Un-RQD" id="zrv-jb-G4f"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canh" translatesAutoresizingMaskIntoConstraints="NO" id="ddg-CT-pnK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMG-Un-RQD">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="kBx-Yr-QK5">
+                    <rect key="frame" x="187.5" y="775" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kBx-Yr-QK5" secondAttribute="bottom" constant="50" id="Hsg-xl-yie"/>
+                <constraint firstItem="DMG-Un-RQD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Nyz-Vv-AmC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DMG-Un-RQD" secondAttribute="trailing" id="aek-aC-TTw"/>
+                <constraint firstItem="ddg-CT-pnK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eXP-Zf-bWf"/>
+                <constraint firstItem="DMG-Un-RQD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gDB-lX-6cR"/>
+                <constraint firstItem="ddg-CT-pnK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gJG-sN-FOV"/>
+                <constraint firstAttribute="bottom" secondItem="ddg-CT-pnK" secondAttribute="bottom" id="jvT-rD-77w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DMG-Un-RQD" secondAttribute="bottom" id="w6c-fw-5bC"/>
+                <constraint firstItem="kBx-Yr-QK5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wYc-Ym-L66"/>
+                <constraint firstItem="ddg-CT-pnK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zfi-D6-oW6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="canh" width="512" height="410"/>
+    </resources>
+</document>
